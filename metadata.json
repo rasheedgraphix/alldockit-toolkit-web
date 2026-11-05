@@ -1,0 +1,6 @@
+{
+  "name": "AllDocKit",
+  "description": "AllDocKit is a 100% offline desktop and web toolkit for merging, splitting, compressing PDFs, HTML to PDF, and converting, compressing, and editing documents & images.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

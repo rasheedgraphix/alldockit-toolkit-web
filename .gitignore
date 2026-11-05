@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-electron/
+dist-appx/
+dist-tauri/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example

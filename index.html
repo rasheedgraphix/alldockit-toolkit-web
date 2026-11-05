@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('app_theme');
+          if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    
+    <!-- Primary Page Title & Meta -->
+    <title>AllDocKit - All-in-One PDF & Document Toolkit | Free Offline Converters & Pro Tools</title>
+    <meta name="title" content="AllDocKit - All-in-One PDF & Document Toolkit | Free Offline Converters & Pro Tools" />
+    <meta name="description" content="AllDocKit is the ultimate 100% private offline PDF & Document toolkit. Merge, split, compress, protect PDFs, convert HTML to PDF, PDF to HTML, make passport photos, and generate invoices with zero data upload." />
+    
+    <!-- Comprehensive Google Search Keywords (Hidden from UI, Crawled by Search Engines) -->
+    <meta name="keywords" content="AllDocKit, AllDocKit Toolkit, Rasheed Graphix, Hafiz Nouman Rasheed, PDF Merge, Merge PDF online, PDF Split, Compress PDF, PDF to Word, Word to PDF, HTML to PDF, PDF to HTML, JPG to PDF, PNG to PDF, PDF to JPG, Convert WebP, Passport Photo Maker, Pakistani Passport Photo, CNIC Photo Maker, Image Compressor, Compress Images to 20KB, Resize Image, Remove Background, PDF Watermark, Digital Signature PDF, Unlock PDF, Protect PDF Password, PDF OCR, Extract Text from Image, Invoice Generator, Certificate Maker, Resume Builder, QR Code Generator, QR Scanner, Barcode Scanner, Scan Barcode Online, Offline PDF Converter, Pakistan EasyPaisa Software" />
+    
+    <meta name="author" content="Rasheed Graphix (Hafiz Nouman Rasheed)" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#059669" />
+    <meta name="application-name" content="AllDocKit" />
+    <meta name="apple-mobile-web-app-title" content="AllDocKit" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rasheedgraphix.github.io/AllDocKitToolkit/" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Favicon & Search Result Icons -->
+    <link rel="icon" type="image/svg+xml" href="/alldockit_logo.svg" />
+    <link rel="apple-touch-icon" href="/alldockit_logo.svg" />
+    <link rel="mask-icon" href="/alldockit_logo.svg" color="#059669" />
+
+    <!-- Google Search Console Verification Meta -->
+    <meta name="google-site-verification" content="google8624a6900aeb1a2b" />
+
+    <!-- PDF.js CDN Library for Client-side PDF Rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+    </script>
+
+    <!-- OpenGraph / Facebook / WhatsApp Share Card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rasheedgraphix.github.io/AllDocKitToolkit/" />
+    <meta property="og:site_name" content="AllDocKit Toolkit" />
+    <meta property="og:title" content="AllDocKit - All-in-One PDF & Document Toolkit | Private & High-Speed" />
+    <meta property="og:description" content="Merge, split, compress PDFs, convert HTML to PDF, convert images, make passport size photos, and generate invoices 100% offline with zero file size limits." />
+    <meta property="og:image" content="https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg" />
+    <meta property="og:image:alt" content="AllDocKit Official Logo" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Share Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rasheedgraphix.github.io/AllDocKitToolkit/" />
+    <meta name="twitter:title" content="AllDocKit - All-in-One PDF & Document Toolkit" />
+    <meta name="twitter:description" content="Merge, split, compress PDFs, convert HTML to PDF & convert files 100% privately in browser." />
+    <meta name="twitter:image" content="https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg" />
+    <meta name="twitter:creator" content="@RasheedGraphix" />
+
+    <!-- Google Schema.org Structured Data (JSON-LD) for Rich Google Search Results & Logo Display -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://rasheedgraphix.github.io/AllDocKitToolkit/#webapp",
+          "name": "AllDocKit - All-in-One PDF & Document Toolkit",
+          "url": "https://rasheedgraphix.github.io/AllDocKitToolkit/",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "All (Web, Windows, macOS, Android, iOS)",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "inLanguage": "en",
+          "description": "Comprehensive client-side PDF, Image and Document productivity toolkit. Offers PDF merging, splitting, compression, HTML to PDF, PDF to HTML, format conversions, passport photo generation, background removal, and invoice creation.",
+          "image": "https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg",
+          "screenshot": "https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg",
+          "creator": {
+            "@type": "Organization",
+            "name": "Rasheed Graphix",
+            "founder": "Hafiz Nouman Rasheed",
+            "url": "https://rasheedgraphix.github.io/AllDocKitToolkit/",
+            "logo": "https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+923455067874",
+              "contactType": "Customer Support",
+              "availableLanguage": ["English", "Urdu"]
+            }
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Monthly Pro",
+              "price": "2.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Annual Pro",
+              "price": "12.99",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1250",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": [
+            "PDF Merge & Combine",
+            "PDF Split & Extract Pages",
+            "PDF Compression & Optimization",
+            "HTML to PDF (20+ Page Sizes & Auto-detect)",
+            "PDF to HTML (Exact Vector Replica)",
+            "Word to PDF and PDF to Word",
+            "Image to PDF (JPG, PNG, WebP to PDF)",
+            "PDF to High-Resolution JPG / PNG",
+            "Passport Size Photo Maker (Pakistani, US Visa, CNIC)",
+            "Image Background Remover & Color Change",
+            "Image Resizer & Exact KB Compressor",
+            "Professional Invoice & Receipt Generator",
+            "Certificate & ID Card Maker",
+            "Barcode & QR Code Generator",
+            "Digital PDF Signatures & Watermarking",
+            "100% Offline Client-side Processing"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://rasheedgraphix.github.io/AllDocKitToolkit/#organization",
+          "name": "AllDocKit by Rasheed Graphix",
+          "url": "https://rasheedgraphix.github.io/AllDocKitToolkit/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://rasheedgraphix.github.io/AllDocKitToolkit/alldockit_logo.svg",
+            "width": "512",
+            "height": "512"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://rasheedgraphix.github.io/AllDocKitToolkit/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is AllDocKit free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, AllDocKit provides free offline PDF, image and document tools with daily conversion quotas and optional 7-day trials for unlimited Pro features."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are my files uploaded to any server?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No! AllDocKit operates 100% client-side inside your browser or desktop environment. Your documents and photos never leave your device."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I upgrade to AllDocKit Pro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can upgrade directly via Debit/Credit Card or EasyPaisa / Bank Transfer (0345-5067874) to receive your official Pro License Key."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

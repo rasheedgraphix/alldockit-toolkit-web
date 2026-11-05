@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/tooling/cli/schema.json",
+  "productName": "AllDocKit",
+  "version": "1.0.5",
+  "identifier": "com.alldockit.toolkit",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "AllDocKit - PDF & Document Toolkit",
+        "width": 1280,
+        "height": 840,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' 'unsafe-inline' data: blob:;"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "GENERATE_A_NEW_KEY_LATER",
+      "endpoints": ["https://github.com/rasheedgraphix/AllDocKit/releases/latest/download/latest.json"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "nsis", "app", "deb"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "CN=PDFImageToolkit",
+    "category": "Productivity",
+    "shortDescription": "100% Offline PDF and Image processing desktop toolkit",
+    "longDescription": "Merge, split, compress PDFs, convert images between PNG, JPG, WEBP, HEIC, resize, and compress with zero watermarks and complete local privacy.",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "AllDocKit - All-in-One PDF & Document Toolkit",
+  "short_name": "AllDocKit",
+  "description": "100% Private & Offline PDF, Image and Document Productivity Toolkit",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090D16",
+  "theme_color": "#059669",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "./alldockit_logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./pixdoc_logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
